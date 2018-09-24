@@ -1,6 +1,8 @@
 # homebridge-philipstv-X
 Homebridge module for Philips TV (with JointSpace enabled)
 
+**Hint:** If you are looking for a homebridge-plugin which supports 2018 philips models checkout [this plugin's fork](https://github.com/jebabin/homebridge-philipstv-enhanced) by [jebabin](https://github.com/jebabin).
+
 # Description
 
 This plugin is basically a modification of homebridge-http.
@@ -49,7 +51,7 @@ Example accessory config for models **from 2014 and 2015** (needs to be added to
 	}
 ]
  ```
- 
+
 Example accessory config for models **from 2016** (needs to be added to the homebridge config.json):
   ```
  "accessories": [
@@ -65,7 +67,7 @@ Example accessory config for models **from 2016** (needs to be added to the home
  	}
  ]
   ```
- 
+
 Added test option for WakeOnWLAN:
  ```
 "accessories": [
@@ -79,7 +81,7 @@ Added test option for WakeOnWLAN:
 	}
 ]
  ```
- 
+
 # Credentials for 2016 models
 
 As of 2016 models Philips closed the open, non-https [JointSpace](http://jointspace.sourceforge.net/) API (v5) and switched to the secured API-version 6. Every control- or status-call needs [digest authentification](https://en.wikipedia.org/wiki/Digest_access_authentication) which contains of a pre generated username and password. You have to do this once for your TV. We reccomend to use the python script [philips\_android\_tv](https://github.com/suborb/philips_android_tv).
