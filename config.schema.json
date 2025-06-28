@@ -1,0 +1,67 @@
+{
+  "pluginAlias": "philipstv-x",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "Homebridge module for the Philips TV (with JointSpace enabled) and ready for 2016 models",
+  "footerDisplay": "For a detailed description, see the [README](https://github.com/skrollme/homebridge-philipstv-x#readme) file.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "TV",
+        "required": true
+      },
+      "ip_address": {
+        "title": "IP Address",
+        "type": "string",
+        "description": "TV's network IP address",
+        "required": true
+      },
+      "poll_status_interval": {
+        "title": "Polling Interval",
+        "type": "integer",
+        "minimum": 15,
+        "default": 30,
+        "description": "Time in seconds between status polls of the TV. Default is 30 seconds.",
+        "required": true
+      },
+      "model_year": {
+        "title": "TV's Model Year",
+        "type": "integer",
+        "default": 2014,
+        "description": "Model year of the TV. This is used to determine the correct API version to use. Default is 2014."
+      },
+      "has_ambilight": {
+        "title": "Ambilight Support",
+        "type": "boolean",
+        "default": true,
+        "description": "Wether the TV supports Ambilight. If set to false, Ambilight controls will not be available."
+      },
+      "wol_url": {
+        "title": "WOL address",
+        "type": "string",
+        "description": "Network address to send Wake-on-LAN packets to.",
+        "required": false
+      },
+      "auth": {
+        "title": "Authentication",
+        "type": "object",
+        "properties": {
+          "username": {
+            "title": "Username",
+            "type": "string",
+            "required": true,
+            "description": "Please see the Readme to find out, how to generate these credentials: https://github.com/skrollme/homebridge-philipstv-x?tab=readme-ov-file#credentials-for-2016-models"
+          },
+          "password": {
+            "title": "Password",
+            "type": "string",
+            "required": true
+          }
+        }
+      }
+    }
+  }
+}
