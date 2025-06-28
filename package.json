@@ -12,6 +12,16 @@
     "request": "^2.69.0",
     "wake_on_lan": "0.0.4"
   },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/skrollme"
+    },
+    {
+      "type": "paypal",
+      "url": "https://www.paypal.com/paypalme/skroll"
+    }
+  ],
   "keywords": [
     "homebridge",
     "philipstv",
