@@ -268,7 +268,7 @@ HttpStatusAccessory.prototype = {
     }
 
     this.httpRequest(this.status_url, '', 'GET', this.api_version, (error, response, responseBody) => {
-      var powerstate = 0;
+      var powerState = 0;
       if (!error) {
         if (responseBody) {
           var responseBodyParsed = JSON.parse(responseBody);
@@ -322,7 +322,7 @@ HttpStatusAccessory.prototype = {
     }
 
     this.httpRequest(this.status_url_ambilight, '', 'GET', this.api_version, (error, response, responseBody) => {
-      var powerstate = 0;
+      var powerState = 0;
       if (!error) {
         if (responseBody) {
           var responseBodyParsed = JSON.parse(responseBody);
