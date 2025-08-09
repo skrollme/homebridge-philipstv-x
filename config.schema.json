@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "philipstv-x",
+  "pluginAlias": "philipstv",
   "pluginType": "accessory",
   "singular": false,
   "headerDisplay": "Homebridge module for the Philips TV (with JointSpace enabled) and ready for 2016 models",
@@ -45,22 +45,16 @@
         "description": "Network address to send Wake-on-LAN packets to.",
         "required": false
       },
-      "auth": {
-        "title": "Authentication",
-        "type": "object",
-        "properties": {
-          "username": {
-            "title": "Username",
-            "type": "string",
-            "required": true,
-            "description": "Please see the Readme to find out, how to generate these credentials: https://github.com/skrollme/homebridge-philipstv-x?tab=readme-ov-file#credentials-for-2016-models"
-          },
-          "password": {
-            "title": "Password",
-            "type": "string",
-            "required": true
-          }
-        }
+      "username": {
+        "title": "Username",
+        "type": "string",
+        "required": true,
+        "description": "Please see the Readme to find out, how to generate these credentials: https://github.com/skrollme/homebridge-philipstv-x?tab=readme-ov-file#credentials-for-2016-models"
+      },
+      "password": {
+        "title": "Password",
+        "type": "string",
+        "required": true
       }
     }
   }
