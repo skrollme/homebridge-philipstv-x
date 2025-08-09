@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "philipstv",
+  "pluginAlias": "PhilipsTV",
   "pluginType": "accessory",
   "singular": false,
   "headerDisplay": "Homebridge module for the Philips TV (with JointSpace enabled) and ready for 2016 models",
